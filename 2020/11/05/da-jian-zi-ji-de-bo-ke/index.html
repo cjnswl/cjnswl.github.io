@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="少年">
+    <meta name="keywords" content="搭建自己的博客, 少年">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>少年</title>
+    <title>搭建自己的博客 | 少年</title>
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/cjnswl/cjnswl.github.io/icons8.png">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/cjnswl/cjnswl.github.io/libs/awesome/css/all.css">
@@ -29,7 +29,7 @@
 
     <script src="https://cdn.jsdelivr.net/gh/cjnswl/cjnswl.github.io/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 <body>
@@ -201,12 +201,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/cjnswl/cjnswl.github.io/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://cdn.jsdelivr.net/gh/cjnswl/cjnswl.github.io/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">搭建自己的博客</h1>
                 </div>
             </div>
         </div>
@@ -321,12 +321,25 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Java/">
+                                <span class="chip bg-color">Java</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/Java/" class="post-category">
+                                Java
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -355,6 +368,7 @@
 <p>官网下载x64或x32即可</p>
 <p><a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a></p>
 <p><strong>Linux</strong></p>
+<p>可自行百度。</p>
 <h2 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h2><p>略</p>
 <h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p><strong>在准备部署的目录首先安装hexo，必须保证目录下为空</strong></p>
 <p><code>npm i hexo-cli -g </code>安装</p>
@@ -367,8 +381,23 @@
 <p><code>hexo clean &amp;&amp; hexo deploy</code>清空并发布</p>
 <p><code>hexo new page &quot;tags&quot;</code>新建一个页面</p>
 <p><code>hexo new post &quot;article title&quot;</code>新建一个文章</p>
-<p>在相关目录安装插件<code>npm i hexo-deployer-git</code></p>
-<h3 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h3><p>在自己的项目目录下的<code>source\_posts</code>文件夹中，添加md文件和图片。</p>
+<p>在相关目录安装插件<code>npm i hexo-deployer-git</code>。如果需要部署和在git开发，必须安装</p>
+<h3 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h3><p>在自己的项目目录下的<code>source\_posts</code>文件夹中，添加md文件。</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><h4 id="1、主页不显示subtitle背景"><a href="#1、主页不显示subtitle背景" class="headerlink" title="1、主页不显示subtitle背景"></a>1、主页不显示subtitle背景</h4><p>清空缓存，或者直接使用浏览器无痕模式。</p>
+<h4 id="2、图片无法加载"><a href="#2、图片无法加载" class="headerlink" title="2、图片无法加载"></a>2、图片无法加载</h4><p>图片加载有坑，我这里的部署，采用了全部上传github，然后md里面输入完整路径（）的方法。</p>
+<h3 id="图床"><a href="#图床" class="headerlink" title="图床"></a><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/35270383">图床</a></h3><p>应对上面“图片无法加载”问题更好的解决方案。</p>
+<h2 id="GIT相关"><a href="#GIT相关" class="headerlink" title="GIT相关"></a>GIT相关</h2><h3 id="GIT配置"><a href="#GIT配置" class="headerlink" title="GIT配置"></a>GIT配置</h3><p>创建一个新的仓库。略</p>
+<h3 id="GIT-Talk"><a href="#GIT-Talk" class="headerlink" title="GIT Talk"></a>GIT Talk</h3><p>在_config.xml中配置</p>
+<pre><code># the Gitalk config，default disabled
+# Gitalk 评论模块的配置，默认为不激活
+gitalk:
+  enable: true
+  owner: github用户名
+  repo: github创建的以io结尾
+  oauth:
+    clientId: 通过seting配置获取（可百度）
+    clientSecret: 通过seting配置获取
+  admin: github用户名</code></pre>
 <p>参考：</p>
 <p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/35668237">https://zhuanlan.zhihu.com/p/35668237</a></p>
 
@@ -433,7 +462,11 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/Java/">
+                                    <span class="chip bg-color">Java</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -508,9 +541,9 @@
                     <div class="card-image">
                         
                         
-                        <img src="https://cdn.jsdelivr.net/gh/cjnswl/cjnswl.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        <img src="https://cdn.jsdelivr.net/gh/cjnswl/cjnswl.github.io/medias/featureimages/0.jpg" class="responsive-img" alt="分布式架构">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">分布式架构</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
